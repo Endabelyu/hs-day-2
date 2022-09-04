@@ -19,7 +19,7 @@ const defaultStyle = 'font-bold';
 
 // type HeadingStyleType = keyof typeof HeadingStyle;
 
-const Typography: FC<PropsHeading> = ({ word, variant }) => {
+const Typography: FC<PropsHeading> = ({ word = 'one', variant = 'h1' }) => {
   return (
     <>
       <p
@@ -32,7 +32,7 @@ const Typography: FC<PropsHeading> = ({ word, variant }) => {
           'text-[16 px] text-red-300 ': variant === 'h6',
         })}
       >
-        this paragraph is {word} {variant}
+        this is Heading {word}
       </p>
       {/* {children} */}
     </>

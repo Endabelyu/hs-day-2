@@ -19,14 +19,16 @@ const HomePage = () => {
       <button className='mb-20' onClick={() => goToProduct()}>
         Go To Product
       </button>
-      <h1>This is Typography</h1>
-      <Typography word='static' variant='h1' />
-      <Typography word='static' variant='h2' />
-      <Typography word='static' variant='h3' />
-      <Typography word='static' variant='h4' />
-      <Typography word='static' variant='h5' />
-      <Typography word='static' variant='h6' />
-      <p>this is end of the Typography</p>
+      <div className='h-[800px]'>
+        <h1>This is Typography</h1>
+        <Typography word='one' variant='h1' />
+        <Typography word='two' variant='h2' />
+        <Typography word='three' variant='h3' />
+        <Typography word='four' variant='h4' />
+        <Typography word='five' variant='h5' />
+        <Typography word='six' variant='h6' />
+        <p className='mt-20'>this is end of the Typography</p>
+      </div>
     </>
   );
 };
