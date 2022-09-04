@@ -22,6 +22,14 @@ const NavBar = () => {
             Product
           </NavLink>
         </li>
+        <li className='hover:cursor-pointer'>
+          <NavLink
+            to={'/Typography'}
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
+            Typography
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

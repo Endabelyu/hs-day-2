@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
-import { NavLink, Route, Routes } from 'react-router-dom';
+// import { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Counters from './components/Counters';
 import EmailsForm from './components/EmailsForm';
-import ErrorBoundary from './components/ErrorBoundary';
-import ErrorComponent from './components/ErrorComponent';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import ErrorComponent from './components/ErrorComponent';
 import ProductType from './components/ProductType';
+import Typography from './components/Typography';
 import NotFound from './NotFound';
 import HomePage from './pages/HomePage';
 import Product from './pages/Product';
@@ -39,6 +40,7 @@ function App() {
         </Route>
         <Route path='/counters' element={<Counters />} />
         <Route path='/emails' element={<EmailsForm />} />
+        <Route path='/typography' element={<Typography name='andi' id='1' />} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>
